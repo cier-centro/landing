@@ -1,6 +1,4 @@
 <?php
-error_reporting(E_ALL);
-
 
 include_once('PHPMailer/class.phpmailer.php');
 include_once('PHPMailer/class.smtp.php');
@@ -21,11 +19,11 @@ if (isset($_POST['email'])) {
     $mail->SMTPSecure = "ssl";
     $mail->Host = "smtp.gmail.com";
     $mail->Port = 465;
-    $mail->Username ='castsabproyectos@gmail.com';
-    $mail->Password = 'castsab04072012'; 
+    $mail->Username ='ciercentroproyectos@gmail.com';
+    $mail->Password = 'CiEr2015'; 
     
     $message = "";
-    $to = "dcastellanos@ciercentro.edu.co";
+    $to = "info@ciercentro.edu.co";
     $subject = 'Sugerencias - Virtual Educa 2017.';
     
     $message = "Detalles del formulario de contacto: <br>";
