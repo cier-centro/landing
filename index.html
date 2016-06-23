@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Virtual Educa 2017</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 logo">
+                    <img src="images/imagenVE-01.jpg" class="img-responsive">
+                </div>
+                <div class="col-sm-5 formulario">
+                    <form action="sendbymail.php" class="form-landing" method="post">
+                        <p>REGISTRATE EN VIRTUAL EDUCA 2017</p>
+                        Nombre:<br>
+                        <input type="text" id="name" name="name" value="">
+                        <br>
+                        Pais:<br>
+                        <input type="text" id="country" name="country" value="">
+                        <br>
+                        Correo electronico:<br>
+                        <input type="email" id="email" name="email">
+                        <br>
+                        Cuéntanos tus sugerencias para que, Virtual Educa Colombia 2017, sea el evento más innovador:<br>
+                        <textarea id="messageSuggestion" name="messageSuggestion" rows="5" cols="30"></textarea>
+                        <br>
+                        Escribe aquí la opción que mas te gustaría que fuera la imagen de Virtual Educa 2017:<br>
+                        <textarea id="messageSuggestion" name="messageOption" rows="2" cols="30"></textarea>
+                        <button id="btnSend" name="btnSend" type="submit" value="ENVIAR"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-7">
+                    <img src="images/ve_1-01.jpg" class="img-responsive">
+                </div>
+                <div class="col-sm-5">
+                    <img src="images/ve_2-01.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

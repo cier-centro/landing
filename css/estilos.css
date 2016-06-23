@@ -1,0 +1,63 @@
+body
+{
+	margin:0;
+	padding: 0;
+	color: white;
+}
+
+.formulario
+{
+	background-color: #2194D2;
+	padding: 10px;
+}
+form
+{
+	margin-left: 20%;
+	color: white;
+}
+
+.logo img
+{
+	margin-top: 70px;
+}
+
+/*FORMULARIO*/
+
+input[type=text], input[type=email], select, textarea {
+    width: 70%;
+    padding: 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 80%;
+    background-color: #FEBD2A;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #DB9B19;
+}
+
+.form-landing input {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+.form-landing textarea {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
