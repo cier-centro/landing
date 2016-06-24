@@ -59,23 +59,23 @@
         
         <div class="row rowFormulario">
             <div class="col-sm-offset-2 col-md-8">
-            	<form action="" class="formulario">
+            	<form id="formSend" name="formSend" action="sendbymail.php" class="form-landing formulario" method="post">
 				<p>Cuéntanos tus sugerencias para que, Virtual Educa Colombia 2017, sea el evento más innovador:</p>
 				Nombre:<br>
-				<input type="text" name="nombre" value="">
+				<input type="text" id="name" name="name" value="">
 				<br>
 				Correo electronico:<br>
-				<input type="email" name="email">
+				<input type="email" id="email" name="email">
 				<br>
 				Pais:<br>
-				<input type="text" name="pais" value="">
+				<input type="text" id="country" name="country" value="">
 				<br>
 				Cuéntanos tus sugerencias para que, Virtual Educa Colombia 2017, sea el evento más innovador:<br>
-				<textarea name="mensaje" rows="3" cols="30"></textarea>
+				<textarea rows="3" cols="30" id="messageSuggestion" name="messageSuggestion"></textarea>
                 <br>
                 Escribe aquí la opción que mas te gustaría que fuera la imagen de Virtual Educa 2017:<br>
-				<textarea name="mensaje" rows="2" cols="30"></textarea>
-				<input type="submit" value="ENVIAR">
+				<textarea rows="2" cols="30" id="messageSuggestion" name="messageOption"></textarea>
+				<input id="btnSend" name="btnSend" type="submit" value="ENVIAR">
 				</form>
             </div>
         </div>
