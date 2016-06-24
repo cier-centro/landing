@@ -12,6 +12,7 @@ body
 	-webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    font-size: 1.2em;
 }
 form
 {
@@ -83,6 +84,13 @@ input[type=submit]:hover {
 }
 
 .form-landing textarea {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+.form-landing select {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
