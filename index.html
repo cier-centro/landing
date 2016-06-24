@@ -1,54 +1,87 @@
 <!doctype html>
 
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <title>Virtual Educa 2017</title>
-        <link rel="stylesheet" href="css/estilos.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Educa 2017</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/ekko-lightbox.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="css/dark.css">
+  
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ekko-lightbox.min.js"></script>
+  <script type="text/javascript">
+			$(document).ready(function ($) {
 
-        <!--[if lt IE 9]>
-          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-    </head>
+				// delegate calls to data-toggle="lightbox"
+				$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+					event.preventDefault();
+					return $(this).ekkoLightbox({
+						always_show_close: true
+					});
+				});
 
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7 logo">
-                    <img src="images/imagenVE-01.jpg" class="img-responsive">
-                </div>
-                <div class="col-sm-5 formulario">
-                    <form id="formSend" name="formSend" action="sendbymail.php" class="form-landing" method="post">
-                        <p>REGISTRATE EN VIRTUAL EDUCA 2017</p>
-                        Nombre:<br>
-                        <input type="text" id="name" name="name" value="">
-                        <br>
-                        Pais:<br>
-                        <input type="text" id="country" name="country" value="">
-                        <br>
-                        Correo electronico:<br>
-                        <input type="email" id="email" name="email">
-                        <br>
-                        Cuéntanos tus sugerencias para que, Virtual Educa Colombia 2017, sea el evento más innovador:<br>
-                        <textarea id="messageSuggestion" name="messageSuggestion" rows="5" cols="30"></textarea>
-                        <br>
-                        Escribe aquí la opción que mas te gustaría que fuera la imagen de Virtual Educa 2017:<br>
-                        <textarea id="messageSuggestion" name="messageOption" rows="2" cols="30"></textarea>
-                        <input id="btnSend" name="btnSend" type="submit" value="ENVIAR"></button>
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-7">
-                    <img src="images/ve_1-01.jpg" class="img-responsive">
-                </div>
-                <div class="col-sm-5">
-                    <img src="images/ve_2-01.jpg" class="img-responsive">
-                </div>
+			});
+	</script>
+  
+</head>
+
+<body>
+	<div class="container">
+    
+    	<div class="row logo">
+        	<div class="col-md-12 centrada">
+            	<img src="images/logoVE-01.jpg" class="img-responsive"/>
             </div>
         </div>
-        <script src="js/jquery-1.12.4.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    </body>
+    
+		<div class="row textura">
+           <div class="col-md-12">
+            <div class="row">
+                <a href="images/AFICHE_01-01.jpg" data-toggle="lightbox" data-gallery="Virtual Educa 2017" data-title="Opción 1" class="col-sm-4">
+                   <img src="images/AFICHE_01-01.jpg" class="img-responsive">
+                </a>
+                <a href="images/AFICHE_01-02.jpg" data-toggle="lightbox" data-gallery="Virtual Educa 2017" data-title="Opción 2" class="col-sm-4">
+                   <img src="images/AFICHE_01-02.jpg" class="img-responsive">
+                </a>
+                <a href="images/AFICHE_01-03.jpg" data-toggle="lightbox" data-gallery="Virtual Educa 2017" data-title="Opción 3" class="col-sm-4">
+                   <img src="images/AFICHE_01-03.jpg" class="img-responsive">
+                </a>
+                <a href="images/AFICHE_01-04.jpg" data-toggle="lightbox" data-gallery="Virtual Educa 2017" data-title="Opción 4" class="col-sm-4">
+                   <img src="images/AFICHE_01-04.jpg" class="img-responsive">
+                </a>
+            </div>
+           </div>
+        </div>
+        
+        <div class="row rowFormulario">
+            <div class="col-sm-offset-2 col-md-8">
+            	<form action="" class="formulario">
+				<p>Cuéntanos tus sugerencias para que, Virtual Educa Colombia 2017, sea el evento más innovador:</p>
+				Nombre:<br>
+				<input type="text" name="nombre" value="">
+				<br>
+				Correo electronico:<br>
+				<input type="email" name="email">
+				<br>
+				Pais:<br>
+				<input type="text" name="pais" value="">
+				<br>
+				Cuéntanos tus sugerencias para que, Virtual Educa Colombia 2017, sea el evento más innovador:<br>
+				<textarea name="mensaje" rows="3" cols="30"></textarea>
+                <br>
+                Escribe aquí la opción que mas te gustaría que fuera la imagen de Virtual Educa 2017:<br>
+				<textarea name="mensaje" rows="2" cols="30"></textarea>
+				<input type="submit" value="ENVIAR">
+				</form>
+            </div>
+        </div>
+
+	</div>
+	
+    
+</body>
 </html>
