@@ -8,7 +8,10 @@ body
 .formulario
 {
 	background-color: #2194D2;
-	padding: 10px;
+	padding: 20px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 form
 {
@@ -16,15 +19,39 @@ form
 	color: white;
 }
 
-.logo img
+img
 {
-	margin-top: 70px;
+	margin:2px;
 }
 
+.centrada img
+{
+	margin: 0 auto;
+}
+
+.textura
+{
+	background-color: #13416F;
+	padding:20px 10px 20px 10px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.logo
+{
+	margin-bottom:20px;
+}
+
+.rowFormulario
+{
+	margin-top:20px;
+	
+}
 /*FORMULARIO*/
 
 input[type=text], input[type=email], select, textarea {
-    width: 70%;
+    width: 100%;
     padding: 8px;
     margin: 8px 0;
     display: inline-block;
@@ -34,7 +61,7 @@ input[type=text], input[type=email], select, textarea {
 }
 
 input[type=submit] {
-    width: 80%;
+    width: 100%;
     background-color: #FEBD2A;
     color: white;
     padding: 10px;
@@ -46,18 +73,4 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #DB9B19;
-}
-
-.form-landing input {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
-}
-
-.form-landing textarea {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
 }
